@@ -10,9 +10,29 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+<style>
+body
+{
+  
+  height: 100%;
+ /*  background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+td
+{
+   font-family: sans-serif;
+   color: black;
+   font-size: large;
+}
+h1
+{
+  color:white;
+}
+</style>
 </head>
-<body background="resources/images/c2.jpg">
-<h1>Add Recipe</h1>
+<body background="resources/images/bg1.jpg">
+<div align="center"><h1>Add Recipe</h1> </div>
 <form:form action="addRecipe" method="post" modelAttribute="recipe">
 <div align="center"><table bgcolor="white">
 <tr><td>
