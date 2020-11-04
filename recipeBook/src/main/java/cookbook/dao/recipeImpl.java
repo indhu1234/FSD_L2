@@ -71,6 +71,12 @@ public class recipeImpl implements recipeDao
 		return false;
 		}
 	}
+
+	public List<recipes> getAll() {
+		Session session=sessionfactory.getCurrentSession();
+		Query query=session.createQuery("from recipes");
+		return query.list();
+	}
 	
 	
 

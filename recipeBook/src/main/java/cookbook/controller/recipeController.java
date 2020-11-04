@@ -79,5 +79,13 @@ public class recipeController
 		 return "Recipes";
 	 }
 	
-	
+	@RequestMapping("/searchbycategory")
+	public String selectByCategory(@RequestParam String searchCondition,Model model) {
+		model.addAttribute("lists", service.getAll());
+		if(searchCondition.equals("All"))
+			model.addAttribute("searchCondition", "");
+		else
+			model.addAttribute("searchCondition", searchCondition);
+		return "Recipes";
+	}
 }

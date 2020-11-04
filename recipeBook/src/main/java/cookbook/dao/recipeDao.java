@@ -10,6 +10,7 @@ public interface recipeDao {
 		public boolean deletRecipe(recipes R);
 		public recipes getid(int id);
 		public boolean updateRecipe(recipes R);
+		public List<recipes> getAll();
 	
 
 }

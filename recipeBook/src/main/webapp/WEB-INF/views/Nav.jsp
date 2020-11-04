@@ -45,7 +45,7 @@ $(document).ready(function(){
       <div class="input-group">
         <input type="text" class="form-control" placeholder="Search" name="search">
         <div class="input-group-btn">
-          <button class="btn btn-default" type="submit">
+          <button class="btn btn-default" type="submit"><a href="searchbycategory"></a>
             <i class="glyphicon glyphicon-search"></i>
           </button>
         </div>
